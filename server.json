@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.mrslbt/nankai",
-  "description": "Honest Nankai Trough earthquake hazard & building-safety engine — official Japan data only, no verdicts.",
+  "description": "Nankai Trough earthquake hazard & building-safety, from official Japan data. No verdicts.",
   "repository": {
     "url": "https://github.com/mrslbt/nankai-mcp",
     "source": "github"
