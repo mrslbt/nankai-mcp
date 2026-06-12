@@ -1,0 +1,56 @@
+{
+  "name": "nankai-mcp",
+  "version": "0.1.0",
+  "description": "Honest Nankai Trough (南海トラフ地震) earthquake hazard + building-safety engine for AI assistants. Surfaces only official Japanese government data, never a safety verdict.",
+  "mcpName": "io.github.mrslbt/nankai",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "nankai",
+    "南海トラフ",
+    "earthquake",
+    "jishin",
+    "hazard",
+    "japan",
+    "bousai",
+    "taishin",
+    "disaster",
+    "ai"
+  ],
+  "author": {
+    "name": "Marsel Bait",
+    "url": "https://marselbait.me"
+  },
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "nankai-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "homepage": "https://github.com/mrslbt/nankai-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrslbt/nankai-mcp.git"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "smoke": "npm run build && node test/smoke.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.3"
+  }
+}

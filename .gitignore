@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.log
+
+# MCP registry auth tokens — NEVER commit
+.mcpregistry_*_token
+.mcpregistry_*
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
